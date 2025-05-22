@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #fdfdfd;
+}
+
+header {
+  background-color: #434343;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #69d3f5;
+}
+
+nav a {
+  color: #fdfdfd;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  background: linear-gradient(160deg, #434343, #121212);
+  text-align: center;
+  padding: 100px 30px;
+}
+
+.hero h2 {
+  color: #69d3f5;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #fdfdfd;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.cta-buttons a {
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.primary-btn {
+  background-color: #69d3f5;
+  color: #121212;
+}
+
+.primary-btn:hover {
+  background-color: #5bc4e7;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #69d3f5;
+  color: #69d3f5;
+}
+
+.secondary-btn:hover {
+  background-color: #69d3f5;
+  color: #121212;
+}
+
+.features {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1f1f1f;
+}
+
+.features div {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #fdfdfd;
+}
+
+footer {
+  background-color: #434343;
+  color: #fdfdfd;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+.tagline {
+  background-color: #69d3f5;
+  color: #121212;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
